@@ -1,5 +1,9 @@
 # YouTube Arrow Keys Fix
 
+<p align="center">
+  <img width='128' src="icons/icon256.png" alt="Alt Text">
+</p>
+
 This extension ensures that the left and right arrow keys always navigate the video timeline, while the up and down arrow keys always control the volume, regardless of the focus on the player.
 
 ## Features
@@ -20,7 +24,3 @@ To install the extension, follow these steps:
 ## Usage
 
 Once the extension is installed, it will automatically enhance the arrow key navigation on YouTube video players. There are no additional settings or configurations required.
-
-<p align="center">
-  <img width='128' src="icons/icon256.png" alt="Alt Text">
-</p>
