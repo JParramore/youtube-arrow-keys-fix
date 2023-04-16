@@ -3,7 +3,6 @@
     "name": "YouTube Arrow Keys Fix",
     "version": "1.0",
     "description": "Fixes YouTube's inconsistent player controls. Right and left always navigate. Up and down always volume control.",
-    "permissions": ["activeTab"],
     "icons": {
         "16": "icons/icon16.png",
         "32": "icons/icon32.png",
