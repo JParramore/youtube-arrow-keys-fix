@@ -20,3 +20,7 @@ To install the extension, follow these steps:
 ## Usage
 
 Once the extension is installed, it will automatically enhance the arrow key navigation on YouTube video players. There are no additional settings or configurations required.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jparramore/youtube-arrow-keys-fix/main/icons/icon128.png" alt="Alt Text">
+</p>
