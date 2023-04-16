@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Arrow Keys Fix",
+    "version": "1.0",
+    "description": "Fixes left and right arrow keys changing volume. Fixes up and down arrow keys scrubbing video.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
