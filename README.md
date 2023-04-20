@@ -4,7 +4,7 @@
   <img width='128' src="icons/icon256.png" alt="Alt Text">
 </p>
 
-This extension ensures that the left and right arrow keys always navigate the video timeline, while the up and down arrow keys always control the volume, regardless of the focus on the player.
+This extension ensures that the left and right arrow keys always navigate the video timeline, while the up and down arrow keys always control the volume, regardless of the focus on the player. Find it in chrome store [here](https://chrome.google.com/webstore/detail/youtube-arrow-keys-fix/hbnlngeljeofecndhmebgpgpccfnkgjb).
 
 ## Features
 
