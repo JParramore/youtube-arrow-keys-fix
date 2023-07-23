@@ -4,7 +4,7 @@
     const CONTROLS_CLASS_NAME = 'ytp-chrome-bottom';
 
     const handler = (e) => {
-        // isTrusted === cloned event
+        // isTrusted is the cloned event
         if (!e.isTrusted || !ARROW_KEYS.includes(e.key)) {
             return;
         }
