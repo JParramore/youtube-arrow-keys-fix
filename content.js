@@ -1,11 +1,11 @@
-(function () {
-    const ARROW_KEYS = ['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown'];
+(function() {
+    const ARROW_KEYS_AND_SPACE = ['ArrowRight', 'ArrowLeft', 'ArrowUp', 'ArrowDown', ' '];
     const VIDEO_SELECTOR = 'video';
     const CONTROLS_CLASS_NAME = 'ytp-chrome-bottom';
 
     const handler = (e) => {
         // isTrusted is the cloned event
-        if (!e.isTrusted || !ARROW_KEYS.includes(e.key)) {
+        if (!e.isTrusted || !ARROW_KEYS_AND_SPACE.includes(e.key)) {
             return;
         }
 
@@ -18,7 +18,21 @@
 
         if (controls.contains(document.activeElement)) {
             e.preventDefault();
-            const clone = new KeyboardEvent(e.type, e);
+
+            // simulate the 'k' letter (pause) if space is pressed 
+            const clone = (e.key === ' ') ? new KeyboardEvent('keydown', {
+                    code: 'KeyK',
+                    key: 'k',
+                    keyCode: 75,
+                    which: 75,
+                    ctrlKey: false,
+                    altKey: false,
+                    shiftKey: false,
+                    metaKey: false,
+                    bubbles: true,
+                    cancelable: true
+                }) :
+                new KeyboardEvent(e.type, e);
             video.dispatchEvent(clone);
         }
     };
